@@ -2,7 +2,7 @@
 
 ## Create the project
 
-Describe here
+A project is a custom vision model. It's used to label images with the appropriate tag (or category), and perform the training. Let's start by creating a project.
 
 1. Navigate to [Custom Vision](https://www.customvision.ai)
 1. Select **New Project**
@@ -25,7 +25,9 @@ Describe here
 
 ## Upload images
 
-Once the project is created it's time to upload images.
+Once the project is created it's time to upload images. These images are used to train the model.
+
+> **Tip**: As a general rule, the more images you can use to train a model the better. You want to include as much variety in the images as possible, including different lighting, angles, and settings.
 
 1. Select **Add images**
 1. Navigate to **folder**
@@ -40,14 +42,26 @@ Once the project is created it's time to upload images.
 1. Select **Train** to open the training dialog
 1. Leave **Quick Training** selected and select **Train** to begin the training process
 
-Training will take a little bit.
+> **Note**: Training the model will take a couple of minutes.
 
 ## Test the model
 
-With the model trained, let's see how well it works.
+With the model trained, let's see how well it works. It's important to use images which weren't used to train the model. After all, if the model has already seen the image it's going to know the answer.
 
 1. Select **Quick Test**
 1. Select **Browse local files**
 1. Navigate to **FOLDER** and select one of the dog images
 1. Select **Open**
 1. Notice the **tag** and **probability** scores
+
+## Publish model
+
+The goal of creating a model in Custom Vision is to use it in different applications. To access it from outside of the Custom Vision website it needs to be published.
+
+1. Select **Publish**
+1. Enter **dogs** for **Model name**
+1. Select **resource** for **Prediction resource**
+1. Select **Publish**
+1. Select **Prediction URL** to view the endpoint address
+1. Copy the value in the grey textbox under **If you have an image file**
+1. Select **Got it**
