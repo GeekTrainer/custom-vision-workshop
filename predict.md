@@ -20,7 +20,7 @@ Whenever you're writing code it's a best practice to never hard-code sensitive v
     ENDPOINT=<YOUR_ENDPOINT>
     KEY=<YOUR_PREDICTION_KEY>
     PROJECT_ID=<YOUR_PROJECT_ID>
-    PUBLISHED_NAME=dogs
+    PUBLISHED_ITERATION_NAME=dogs
     ```
 
 1. Save the file by selecting **File** > **Save**
@@ -92,7 +92,7 @@ Earlier we setup a few environment variables like our key and endpoint. Let's lo
     key = os.getenv('KEY')
     endpoint = os.getenv('ENDPOINT')
     project_id = os.getenv('PROJECT_ID')
-    published_name = os.getenv('PUBLISHED_NAME')
+    published_name = os.getenv('PUBLISHED_ITERATION_NAME')
     ```
 
 ### Perform the prediction
