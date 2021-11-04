@@ -9,7 +9,7 @@ import os
 
 # Load the key and endpoint values
 load_dotenv()
-    
+
 # Set the values into variables
 key = os.getenv('KEY')
 endpoint = os.getenv('ENDPOINT')

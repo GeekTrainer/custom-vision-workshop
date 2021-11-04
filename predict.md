@@ -1,17 +1,19 @@
-# Use the model
+# Part 2: Use the model
 
 ## Obtain keys and values
 
 As with any service, we need to gather the keys and values to make our calls.
 
-1. In the upper right corner, select the **Gear** icon for settings
-1. Make a note of the **Key**, **Endpoint**, and **Project ID** values
+1. In the upper right corner of the Custom Vision interface, select the **Gear** icon for settings
+1. Make a note of the **Key**, **Endpoint**, and **Project Id** values
+
+> TIP: **Project Id** is the value on the left side of the screen
 
 ## Store the necessary credentials
 
-Whenever you're writing code it's a best practice to never hard-code sensitive values, such as passwords, or any value which may change. This can lead to security breaches or difficult to maintain code. To create our application we're going to follow generally accepted best practices. To do this we'll use a library named [python_dotenv](https://github.com/theskumar/python-dotenv), which allows you to set environment variables with a text file.
+Whenever you're writing code it's a best practice to never hard-code sensitive values, such as passwords, or any value which may change. This can lead to security breaches or code that's difficult to maintain. To create our application we're going to follow generally accepted best practices. To do this we'll use a library named [python_dotenv](https://github.com/theskumar/python-dotenv), which allows you to set environment variables with a text file.
 
-1. In the folder, create a new file named **.env**
+1. In this project's root folder, create a new file named **.env**
 1. Add the following values, replacing the placeholders
 
     ```bash
@@ -25,7 +27,7 @@ Whenever you're writing code it's a best practice to never hard-code sensitive v
 
 ## Install the packages
 
-We'll be using two Python packages to support our project. The first we already introduced, **python-dotenv**. The next is the [Custom Vision client library (or SDK)](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/quickstarts/image-classification?tabs=visual-studio&pivots=programming-language-python), which you'll use to actually make the predictions of which dog breed is in the image.
+We'll be using two Python packages to support our project. The first we already introduced, **python-dotenv**. The next is the [Custom Vision client library (or SDK)](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/quickstarts/image-classification?tabs=visual-studio&pivots=programming-language-python), which you'll use to  make the predictions.
 
 1. Create a new file named **requirements.txt**
 1. Inside **requirements.txt**, add the following:
