@@ -14,7 +14,7 @@ load_dotenv()
 key = os.getenv('KEY')
 endpoint = os.getenv('ENDPOINT')
 project_id = os.getenv('PROJECT_ID')
-published_name = os.getenv('PUBLISHED_NAME')
+published_name = os.getenv('PUBLISHED_ITERATION_NAME')
 
 # Setup credentials for client
 credentials = ApiKeyCredentials(in_headers={'Prediction-key':key})
